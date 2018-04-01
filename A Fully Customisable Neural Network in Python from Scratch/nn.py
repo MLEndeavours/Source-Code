@@ -1,4 +1,5 @@
 import numpy as np
+
 class NN(object):
     """
     A network that uses sigmoid activation function.
