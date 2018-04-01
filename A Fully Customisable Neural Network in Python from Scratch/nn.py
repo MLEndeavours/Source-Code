@@ -80,7 +80,7 @@ class NN(object):
         else:
             return layers, weights
         
-            def cost(self, x, y, lamda=0):
+    def cost(self, x, y, lamda=0):
         """
         Calculates the cost for given data and labels, with trained weights.
         """
@@ -97,4 +97,5 @@ class NN(object):
                               (1 - y).T.dot(np.log(1 - layers['a%d' % (len(layers))]))) + (lamda / (2 * m)) * reg2
 
         return j
+    
     
