@@ -80,3 +80,21 @@ class NN(object):
         else:
             return layers, weights
         
+            def cost(self, x, y, lamda=0):
+        """
+        Calculates the cost for given data and labels, with trained weights.
+        """
+        
+        weights = self.weights
+        layers, _ = self.predict(x, predict=False)
+
+        m, n = x.shape
+        reg2 = 0 # The regularization term
+        for i in range(len(weights)):
+            reg2 += np.sum(weights['w%d' % (i + 1)][:, 1:] ** 2) # L2 regularization
+
+        j = (-1 / m) * np.sum(y.T.dot(np.log(layers['a%d' % (len(layers))])) +
+                              (1 - y).T.dot(np.log(1 - layers['a%d' % (len(layers))]))) + (lamda / (2 * m)) * reg2
+
+        return j
+    
