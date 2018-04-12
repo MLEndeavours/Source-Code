@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # the native way
 sudo pip install numpy
 
