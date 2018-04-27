@@ -1,4 +1,4 @@
-# ML-Endeavours
+# Source-Code
 The accompanying repository for all the source code of articles from [ML Endeavours](http://mlendeavours.wordpress.com) blog. [ML Endeavours](http://mlendeavours.wordpress.com) is a blog dedicated to Machine Learning, a subset of Artificial Intelligence (AI).
 
 ## [Get NumPy up and running!](https://github.com/IAmSuyogJadhav/ML-Endeavours/tree/master/Get%20NumPy%20up%20and%20running)
